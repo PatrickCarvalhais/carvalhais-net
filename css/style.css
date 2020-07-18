@@ -1,0 +1,179 @@
+body {
+    margin: 40px;
+    background-color: #F2F2F2;
+    font-family: 'Sora', sans-serif;
+}
+
+header {
+    height: auto;
+    grid-column: 1/3;
+}
+
+/* Layout */
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-rows: 40vh 40vh 20vh;
+    gap: 10px;
+}
+
+
+/* Align */
+
+.content-at-start {
+    align-content: flex-start;
+}
+
+.content-at-center {
+    align-content: center;
+}
+
+/* Colors */
+
+.custom-red {
+    color: #FF3366;
+}
+
+.custom-purple {
+    color: #62466B;
+}
+
+.custom-yellow {
+    color: goldenrod;
+}
+
+
+/* Components */
+
+.footer {
+    background-color: inherit;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer > span > a {
+    color: #FF3366;
+    text-decoration: none;
+    font-family: 'Sora', sans-serif;
+    transition: ease-in-out 10ms;
+}
+
+.footer > span > a:hover {
+    text-decoration: none;
+    font-family: 'Sora', sans-serif;
+    font-style: italic;
+}
+
+.logo {
+    color: #62466B;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    letter-spacing: .2em;
+    top: 25%;
+}
+
+.logo-description {
+    color: #62466B;
+    font-family: 'Sora', sans-serif;
+    font-size: 2.2em;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+.options {
+    background-color: inherit;
+}
+
+.options > li {
+    list-style-type: none;
+    display: inline;
+    padding: 15px;
+}
+
+.options > li > a {
+    text-align: left;
+    font-family: 'Sora', sans-serif;
+    font-size: .6em;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+    color: #62466B;
+    padding: 5px;
+}
+
+.options > li > a:hover {
+    color: #FF3366;
+}
+/* About */
+
+.container-about {
+    display: grid;
+    grid-template-columns: 2fr 2r 4fr 2fr;
+    grid-template-rows: 15vh 60vh 25vh;
+    gap: 10px;
+    grid-template-areas: 
+    "h none f"
+    "t none f"
+    "n none f";
+}
+
+.about {
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.about > h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+.about-content {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+
+    padding-left: 25px;
+}
+
+.about-content > hr {
+    color: goldenrod;
+    width: 25%;
+}
+
+.about-image {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-area: f;
+}
+
+.about-image > img {
+    max-height: 980px;
+}
+
+.about-back {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-area: n;
+}
+
+.about-back > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+    font-weight: bolder;
+    letter-spacing: .1em;
+    bottom: 0;
+    float: left;
+    transition: ease-in-out .2s;
+}
+
+.about-back > a:hover {
+    color: #FF3366;
+}
